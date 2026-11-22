@@ -152,6 +152,16 @@
   .emg-card p{color:var(--ink2);font-size:.88rem}
   .emg-note{margin-top:14px;color:var(--ink2);font-size:.92rem;background:var(--surface2);border-radius:14px;padding:14px 18px}
 
+  /* OWNER / CONTACT */
+  .owner-band{background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:28px 30px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;box-shadow:var(--shadow)}
+  .owner-band h2{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:800;margin-top:6px}
+  .owner-band p{color:var(--ink2);margin-top:6px;max-width:32rem}
+  .owner-contact{display:grid;gap:10px;min-width:min(320px,100%)}
+  .owner-contact a,.owner-contact span{display:flex;align-items:center;gap:12px;background:var(--surface2);border:1px solid var(--line);border-radius:16px;padding:14px 18px;color:var(--ink);text-decoration:none;font-weight:800}
+  .owner-contact b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.15rem;letter-spacing:.02em}
+  .owner-contact small{display:block;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+  .owner-contact .ph{font-size:1.3rem;line-height:1;color:var(--teal)}
+
   footer{margin-top:64px;background:var(--ink);color:var(--bg);padding:38px 0 30px}
   @media (prefers-color-scheme: dark){footer{background:var(--surface);border-top:1px solid var(--line);color:var(--ink)}}
   footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:26px}
@@ -419,6 +429,21 @@
     <p class="emg-note"><strong>First 60 seconds anywhere:</strong> stay calm → move to safety → call the number → say where you are first, then what happened → follow the operator's instructions and don't hang up until they say so.</p>
   </section>
 
+  <!-- OWNER / CONTACT -->
+  <section id="contact" aria-label="Website owner and contact">
+    <div class="owner-band">
+      <div>
+        <p class="label">Website Owner · Contact</p>
+        <h2>AFTAB ANSARI</h2>
+        <p>Daily Life Help ke owner se sampark karne ke liye neeche diye gaye phone number par call karein.</p>
+      </div>
+      <div class="owner-contact">
+        <span><svg class="ph" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg><span><small>Owner</small><b>AFTAB ANSARI</b></span></span>
+        <a href="tel:79706698"><svg class="ph" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg><span><small>Phone Number</small><b>79706698**</b></span></a>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer>
@@ -427,6 +452,7 @@
       <div>
         <h3>Daily Life Help</h3>
         <p>Simple guides and tools for everyday life — health, home, food, money, tech and mind. Made for people everywhere, in language everyone can understand.</p>
+        <p style="margin-top:12px;opacity:1"><strong>Owner: AFTAB ANSARI</strong><br />Phone: <a href="tel:79706698" style="padding:0;font-weight:800">79706698**</a></p>
       </div>
       <div>
         <h3>Explore</h3>
